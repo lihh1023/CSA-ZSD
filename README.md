@@ -1,4 +1,4 @@
-# Zero-shot Object Detection with Partitioned Contrastive Feature Alignment
+# Zero-shot Object Detection with Contrastive Semantic Association Network
 
 ![OverviewFigure](image/fig2.png)
 
