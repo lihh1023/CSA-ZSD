@@ -158,12 +158,12 @@ def main(args=None):
     # 遍历字典列表
     for label, average_precision in average_precisions.items():
         print(generator.label_to_name(label) + '_AP', '{:.4f}'.format(average_precision))  # AP
-        if label > 65:
+        if label >= 65:
             mu = mu + average_precision
 
     for label, average_recall in average_recalls.items():
         print(generator.label_to_name(label) + '_RE', '{:.4f}'.format(average_recall))  # recall
-        if label > 65:
+        if label >= 65:
             ru = ru + average_recall
 
     unseenMAP = mu / 15
